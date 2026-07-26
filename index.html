@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TravelVista</title>
+    <!-- font awesome -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css"
+        integrity="sha512-ApSLB1Pd3/bZN8fWB/RG9YhN/7bd9Hkf3AGaE2mPfebjrxagjuBtx2GcgdqIlJkUzwylBo61r9Xa9NmgBI0swA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Google fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <div>
+        <div class="navbar">
+            <i class="fa-solid fa-bars"></i>
+            <img src="image/logo.png" class="tripadvisor-logo" alt="TripAdvisor">
+
+            <div class="navbar__s1">
+                <img src="image/play-with-ai-img.png" class="navbar__s1__img__bg" alt="">
+                <!-- Visible on Tablet/Desktop -->
+                <button class="play-with-ai__button_max ">Plan with AI</button>
+
+                <img src="image/savelist.png" class="navbar__s1__img" alt="">
+                <img src="image/user.png" class="navbar__s1__profile_img" alt="">
+                <!-- Visible on Tablet/Desktop -->
+                <button class="navbar__s1__signin__btn">Sign in</button>
+            </div>
+        </div>
+        <!-- Visible on Tablet/Desktop -->
+        <h1 class="heading_where">Where to?</h1>
+
+        <div class="categories">
+            <div class="categories__section active">
+                <img src="image/category-home-img.png" class="categories__section__img" alt="">
+                <span class="categories__title">Search All</span>
+            </div>
+            <div class="categories__section">
+                <img src="image/category-camera.png" class="categories__section__img" alt="">
+                <span class="categories__title">Things to DO</span>
+            </div>
+            <div class="categories__section">
+                <img src="image/category-hotel-img.png" class="categories__section__img" alt="">
+                <span class="categories__title">Hotels</span>
+            </div>
+            <div class="categories__section">
+                <img src="image/category-resturant.png" class="categories__section__img" alt="">
+                <span class="categories__title">Restaurants</span>
+            </div>
+
+        </div>
+
+        <div class="search-section">
+            <div class="search__input_wrapper">
+                <i class="fa-solid fa-magnifying-glass"></i>
+
+                <input placeholder="Place to go, Things to do, hotels..." type="text" class="search-input">
+            </div>
+            <button class="search-button">Search</button>
+        </div>
+
+        <div class="main-card">
+            <div>
+                <img src="image/main-card-img.jpg" class="main-card__img" alt="">
+            </div>
+
+            <div class="main-card__bottom">
+                <h1>
+                    Find things to do for everything you're into
+                </h1>
+                <p>
+                    Browse 400,000+ experience and book with us.
+                </p>
+                <button class="main-card__bottom__button">
+                    Book Now
+                </button>
+            </div>
+        </div>
+
+        <div class="interesting-things">
+            <h1>Find things to do by interest</h1>
+            <p>Whatever you're into, we've got it</p>
+
+            <div class="interesting-things__wrapper">
+                <div class="interesting-things__section">
+                    <div class="interesting-things__card">
+                        <img src="image/img-1.jpg" class="interesting-things__card__img" alt="">
+                        <h3>Outdoors</h3>
+                    </div>
+                    <div class="interesting-things__card">
+                        <img src="image/img-2.jpg" class="interesting-things__card__img" alt="">
+                        <h3>Foods</h3>
+                    </div>
+                    <div class="interesting-things__card">
+                        <img src="image/img-4.jpg" class="interesting-things__card__img" alt="">
+                        <h3>Culture</h3>
+                    </div>
+                    <div class="interesting-things__card">
+                        <img src="image/img-3.jpg" class="interesting-things__card__img" alt="">
+                        <h3>Water</h3>
+                    </div>
+                </div>
+                <button class="scroll-arrow-btn  " aria-label="Next">
+                    <i class="fa-solid fa-arrow-left"></i>
+                </button>
+                <button class="scroll-arrow-btn scroll-arrow-btn--right" aria-label="Next">
+                    <i class="fa-solid fa-arrow-right"></i>
+                </button>
+            </div>
+        </div>
+
+        <div class="explore-section">
+            <h1>Explore experience near Bangaluru</h1>
+            <p>Can't-miss picks near you</p>
+
+            <div class="explore-section__wrapper__container">
+
+                <!-- Card 1 -->
+                <div class="explore-section__wrapper__card">
+                    <div class="explore-section__wishlist">
+                        <i class="fa-regular fa-heart"></i>
+                    </div>
+                    <img src="image/place-img1.jpg" alt="">
+                    <h3 class="explore-section__wrapper__card__h3">Old Bangalore Historical Walk</h3>
+                    <p>5.0
+                        <i class="fa-solid fa-circle" style="color: rgb(31, 194, 66);"></i>
+                        <i class="fa-solid fa-circle" style="color: rgb(31, 194, 66);"></i>
+                        <i class="fa-solid fa-circle" style="color: rgb(31, 194, 66);"></i>
+                        <i class="fa-solid fa-circle" style="color: rgb(31, 194, 66);"></i>
+                        <i class="fa-solid fa-circle-half-stroke" style="color: rgb(31, 194, 66);"></i>
+                        (81)
+                    </p>
+                    <p class="explore-section__wrapper__card__price">from $2,500 per adult</p>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="explore-section__wrapper__card">
+                    <div class="explore-section__wishlist">
+                        <i class="fa-regular fa-heart"></i>
+                    </div>
+                    <img src="image/place-img2.jpg" alt="">
+                    <h3 class="explore-section__wrapper__card__h3">Nandi Hills Day Trip from Bangalore</h3>
+                    <p>4.5
+                        <i class="fa-solid fa-circle" style="color: rgb(31, 194, 66);"></i>
+                        <i class="fa-solid fa-circle" style="color: rgb(31, 194, 66);"></i>
+                        <i class="fa-solid fa-circle" style="color: rgb(31, 194, 66);"></i>
+                        <i class="fa-solid fa-circle" style="color: rgb(31, 194, 66);"></i>
+                        <i class="fa-solid fa-circle-half-stroke" style="color: rgb(31, 194, 66);"></i>
+                        (310)
+                    </p>
+                    <p class="explore-section__wrapper__card__price">from $6,500 per adult</p>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="explore-section__wrapper__card">
+                    <div class="explore-section__wishlist">
+                        <i class="fa-regular fa-heart"></i>
+                    </div>
+                    <img src="image/place-img3.jpg" alt="">
+                    <h3 class="explore-section__wrapper__card__h3">Wild Life Jeep Safari Tour</h3>
+                    <p>4.8
+                        <i class="fa-solid fa-circle" style="color: rgb(31, 194, 66);"></i>
+                        <i class="fa-solid fa-circle" style="color: rgb(31, 194, 66);"></i>
+                        <i class="fa-solid fa-circle" style="color: rgb(31, 194, 66);"></i>
+                        <i class="fa-solid fa-circle-half-stroke" style="color: rgb(31, 194, 66);"></i>
+                        (30)
+                    </p>
+                    <p class="explore-section__wrapper__card__price">from $6,500 per adult</p>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="explore-section__wrapper__card">
+                    <div class="explore-section__wishlist">
+                        <i class="fa-regular fa-heart"></i>
+                    </div>
+                    <img src="image/place-img4.jpg" alt="">
+                    <h3 class="explore-section__wrapper__card__h3">Best of Mysore,UNESCO Somnathpur Temple</h3>
+                    <p>5.0
+                        <i class="fa-solid fa-circle" style="color: rgb(31, 194, 66);"></i>
+                        <i class="fa-solid fa-circle" style="color: rgb(31, 194, 66);"></i>
+                        <i class="fa-solid fa-circle" style="color: rgb(31, 194, 66);"></i>
+                        <i class="fa-solid fa-circle" style="color: rgb(31, 194, 66);"></i>
+                        <i class="fa-solid fa-circle-half-stroke" style="color: rgb(31, 194, 66);"></i>
+                        (310)
+                    </p>
+                    <p class="explore-section__wrapper__card__price">from $12,500 per adult</p>
+                </div>
+
+                <!-- Card 5 -->
+                <div class="explore-section__wrapper__card">
+                    <div class="explore-section__wishlist">
+                        <i class="fa-regular fa-heart"></i>
+                    </div>
+                    <img src="image/place-img5.jpg" alt="">
+                    <h3 class="explore-section__wrapper__card__h3">Best of Mysore,UNESCO Somnathpur Temple</h3>
+                    <p>5.0
+                        <i class="fa-solid fa-circle" style="color: rgb(31, 194, 66);"></i>
+                        <i class="fa-solid fa-circle" style="color: rgb(31, 194, 66);"></i>
+                        <i class="fa-solid fa-circle" style="color: rgb(31, 194, 66);"></i>
+                        <i class="fa-solid fa-circle-half-stroke" style="color: rgb(31, 194, 66);"></i>
+                        (310)
+                    </p>
+                    <p class="explore-section__wrapper__card__price">from $12,500 per adult</p>
+                </div>
+
+                <!-- Card 6 -->
+                <div class="explore-section__wrapper__card">
+                    <div class="explore-section__wishlist">
+                        <i class="fa-regular fa-heart"></i>
+                    </div>
+                    <img src="image/place-img6.jpg" alt="">
+                    <h3 class="explore-section__wrapper__card__h3">Best of Mysore,UNESCO Somnathpur Temple</h3>
+                    <p>5.0
+                        <i class="fa-solid fa-circle" style="color: rgb(31, 194, 66);"></i>
+                        <i class="fa-solid fa-circle" style="color: rgb(31, 194, 66);"></i>
+                        <i class="fa-solid fa-circle" style="color: rgb(31, 194, 66);"></i>
+                        <i class="fa-solid fa-circle" style="color: rgb(31, 194, 66);"></i>
+                        <i class="fa-solid fa-circle-half-stroke" style="color: rgb(31, 194, 66);"></i>
+                        (310)
+                    </p>
+                    <p class="explore-section__wrapper__card__price">from $12,500 per adult</p>
+                </div>
+
+                <!-- Card 7 -->
+                <div class="explore-section__wrapper__card">
+                    <div class="explore-section__wishlist">
+                        <i class="fa-regular fa-heart"></i>
+                    </div>
+                    <img src="image/place-img7.jpg" alt="">
+                    <h3 class="explore-section__wrapper__card__h3">Best of Mysore,UNESCO Somnathpur Temple</h3>
+                    <p>5.0
+                        <i class="fa-solid fa-circle" style="color: rgb(31, 194, 66);"></i>
+                        <i class="fa-solid fa-circle" style="color: rgb(31, 194, 66);"></i>
+                        <i class="fa-solid fa-circle" style="color: rgb(31, 194, 66);"></i>
+                        <i class="fa-solid fa-circle" style="color: rgb(31, 194, 66);"></i>
+                        <i class="fa-solid fa-circle-half-stroke" style="color: rgb(31, 194, 66);"></i>
+                        (310)
+                    </p>
+                    <p class="explore-section__wrapper__card__price">from $12,500 per adult</p>
+                </div>
+
+                <!-- Card 8 -->
+                <div class="explore-section__wrapper__card">
+                    <div class="explore-section__wishlist">
+                        <i class="fa-regular fa-heart"></i>
+                    </div>
+                    <img src="image/place-img8.jpg" alt="">
+                    <h3 class="explore-section__wrapper__card__h3">Best of Mysore,UNESCO Somnathpur Temple</h3>
+                    <p>5.0
+                        <i class="fa-solid fa-circle" style="color: rgb(31, 194, 66);"></i>
+                        <i class="fa-solid fa-circle" style="color: rgb(31, 194, 66);"></i>
+                        <i class="fa-solid fa-circle" style="color: rgb(31, 194, 66);"></i>
+                        <i class="fa-solid fa-circle" style="color: rgb(31, 194, 66);"></i>
+                        <i class="fa-solid fa-circle-half-stroke" style="color: rgb(31, 194, 66);"></i>
+                        (310)
+                    </p>
+                    <p class="explore-section__wrapper__card__price">from $12,500 per adult</p>
+                </div>
+
+            </div>
+            <button class="scroll-arrow-btn" aria-label="Next">
+                <i class="fa-solid fa-arrow-right"></i>
+            </button>
+
+        </div>
+        <div class="foundation-section">
+            <!-- Image -->
+            <img src="image/donation-img.jpg" class="foundation-section__img" alt="Donation">
+
+            <!-- Content Container -->
+            <div class="foundation-section__content">
+                <div class="foundation-section__top">
+                    <img src="image/logo-img.png" class="tripadvisor-logo-image" alt="">
+                    <h5>TravelVista Foundation</h5>
+                </div>
+
+                <h3>Show some love to small businesses</h3>
+
+                <p>Donate to Kiva.org today to provide loans to local entrepreneurs and the TravelVista Foundation will
+                    match it, up to $150,000 USD collectively. Terms apply.</p>
+
+                <button class="donate-btn">Donate Now</button>
+            </div>
+        </div>
+
+        <div class="explore-section">
+            <h1>Just add water</h1>
+            <p>Surfing, jet-skiing, boating, and beyond</p>
+
+            <div class="explore-section__wrapper__container">
+
+                <!-- Card 1 -->
+                <div class="explore-section__wrapper__card">
+                    <div class="explore-section__wishlist">
+                        <i class="fa-regular fa-heart"></i>
+                    </div>
+                    <img src="image/water-img1.jpg" alt="">
+                    <h3 class="explore-section__wrapper__card__h3">Key West Island Adventure Jet Ski Tour: Bring a
+                        Partner for Free</h3>
+                    <p>4.0
+                        <i class="fa-solid fa-circle" style="color: rgb(31, 194, 66);"></i>
+                        <i class="fa-solid fa-circle" style="color: rgb(31, 194, 66);"></i>
+                        <i class="fa-solid fa-circle" style="color: rgb(31, 194, 66);"></i>
+                        <i class="fa-solid fa-circle" style="color: rgb(31, 194, 66);"></i>
+                        <i class="fa-solid fa-circle-half-stroke" style="color: rgb(31, 194, 66);"></i>
+                        (481)
+                    </p>
+                    <p class="explore-section__wrapper__card__price">ffrom ₹15,425 per group</p>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="explore-section__wrapper__card">
+                    <div class="explore-section__wishlist">
+                        <i class="fa-regular fa-heart"></i>
+                    </div>
+                    <img src="image/water-img2.jpg" alt="">
+                    <h3 class="explore-section__wrapper__card__h3">2-Hour Surf Lesson in the Waves of Puerto Escondido
+                    </h3>
+                    <p>5.0
+                        <i class="fa-solid fa-circle" style="color: rgb(31, 194, 66);"></i>
+                        <i class="fa-solid fa-circle" style="color: rgb(31, 194, 66);"></i>
+                        <i class="fa-solid fa-circle" style="color: rgb(31, 194, 66);"></i>
+                        <i class="fa-solid fa-circle" style="color: rgb(31, 194, 66);"></i>
+                        <i class="fa-solid fa-circle-half-stroke" style="color: rgb(31, 194, 66);"></i>
+                        (310)
+                    </p>
+                    <p class="explore-section__wrapper__card__price">from ₹6,819 per adult</p>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="explore-section__wrapper__card">
+                    <div class="explore-section__wishlist">
+                        <i class="fa-regular fa-heart"></i>
+                    </div>
+                    <img src="image/water-img3.jpg" alt="">
+                    <h3 class="explore-section__wrapper__card__h3">Rafting in Gallego River - Spain, Murillo de Gallego
+                        - UR Pirineos</h3>
+                    <p>4.9
+                        <i class="fa-solid fa-circle" style="color: rgb(31, 194, 66);"></i>
+                        <i class="fa-solid fa-circle" style="color: rgb(31, 194, 66);"></i>
+                        <i class="fa-solid fa-circle" style="color: rgb(31, 194, 66);"></i>
+                        <i class="fa-solid fa-circle-half-stroke" style="color: rgb(31, 194, 66);"></i>
+                        (146)
+                    </p>
+                    <p class="explore-section__wrapper__card__price">from ₹5,514 per adult</p>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="explore-section__wrapper__card">
+                    <div class="explore-section__wishlist">
+                        <i class="fa-regular fa-heart"></i>
+                    </div>
+                    <img src="image/water-img4.jpg" alt="">
+                    <h3 class="explore-section__wrapper__card__h3">Capri & Blue Grotto Semi Private Boat Day Trip from
+                        Sorrento</h3>
+                    <p>5.0
+                        <i class="fa-solid fa-circle" style="color: rgb(31, 194, 66);"></i>
+                        <i class="fa-solid fa-circle" style="color: rgb(31, 194, 66);"></i>
+                        <i class="fa-solid fa-circle" style="color: rgb(31, 194, 66);"></i>
+                        <i class="fa-solid fa-circle" style="color: rgb(31, 194, 66);"></i>
+                        <i class="fa-solid fa-circle-half-stroke" style="color: rgb(31, 194, 66);"></i>
+                        (310)
+                    </p>
+                    <p class="explore-section__wrapper__card__price">from ₹20,145 per adult</p>
+                </div>
+
+                <!-- Card 5 -->
+                <div class="explore-section__wrapper__card">
+                    <div class="explore-section__wishlist">
+                        <i class="fa-regular fa-heart"></i>
+                    </div>
+                    <img src="image/water-img5.jpg" alt="">
+                    <h3 class="explore-section__wrapper__card__h3">Backwater Adventure's CraigCat Tours of the 10,000
+                        Islands</h3>
+                    <p>4.0
+                        <i class="fa-solid fa-circle" style="color: rgb(31, 194, 66);"></i>
+                        <i class="fa-solid fa-circle" style="color: rgb(31, 194, 66);"></i>
+                        <i class="fa-solid fa-circle-half-stroke" style="color: rgb(31, 194, 66);"></i>
+                        (310)
+                    </p>
+                    <p class="explore-section__wrapper__card__price">from ₹17,310 per adult</p>
+                </div>
+
+                <!-- Card 6 -->
+                <div class="explore-section__wrapper__card">
+                    <div class="explore-section__wishlist">
+                        <i class="fa-regular fa-heart"></i>
+                    </div>
+                    <img src="image/water-img6.jpg" alt="">
+                    <h3 class="explore-section__wrapper__card__h3">Belize Hol Chan Marine Reserve & Shark Ray Alley
+                        Snorkel Tour - Ambergris Caye</h3>
+                    <p>4.2
+                        <i class="fa-solid fa-circle" style="color: rgb(31, 194, 66);"></i>
+                        <i class="fa-solid fa-circle" style="color: rgb(31, 194, 66);"></i>
+                        <i class="fa-solid fa-circle-half-stroke" style="color: rgb(31, 194, 66);"></i>
+                        (110)
+                    </p>
+                    <p class="explore-section__wrapper__card__price">from ₹11,161 per adult</p>
+                </div>
+
+                <!-- Card 7 -->
+                <div class="explore-section__wrapper__card">
+                    <div class="explore-section__wishlist">
+                        <i class="fa-regular fa-heart"></i>
+                    </div>
+                    <img src="image/water-img7.jpg" alt="">
+                    <h3 class="explore-section__wrapper__card__h3">Outrigger Canoe Surfing</h3>
+                    <p>4.0
+                        <i class="fa-solid fa-circle" style="color: rgb(31, 194, 66);"></i>
+                        <i class="fa-solid fa-circle" style="color: rgb(31, 194, 66);"></i>
+                        <i class="fa-solid fa-circle" style="color: rgb(31, 194, 66);"></i>
+                        <i class="fa-solid fa-circle-half-stroke" style="color: rgb(31, 194, 66);"></i>
+                        <i class="fa-solid fa-circle-half-stroke" style="color: rgb(31, 194, 66);"></i>
+                        (310)
+                    </p>
+                    <p class="explore-section__wrapper__card__price">from ₹5,098 per adult</p>
+                </div>
+
+                <!-- Card 8 -->
+                <div class="explore-section__wrapper__card">
+                    <div class="explore-section__wishlist">
+                        <i class="fa-regular fa-heart"></i>
+                    </div>
+                    <img src="image/water-img8.jpg" alt="">
+                    <h3 class="explore-section__wrapper__card__h3">Ha Long Bay 5-Star Day Cruise with Buffet, Kayaking,
+                        and Swimming</h3>
+                    <p>5.0
+                        <i class="fa-solid fa-circle" style="color: rgb(31, 194, 66);"></i>
+                        <i class="fa-solid fa-circle" style="color: rgb(31, 194, 66);"></i>
+                        <i class="fa-solid fa-circle" style="color: rgb(31, 194, 66);"></i>
+                        <i class="fa-solid fa-circle" style="color: rgb(31, 194, 66);"></i>
+                        <i class="fa-solid fa-circle-half-stroke" style="color: rgb(31, 194, 66);"></i>
+                        (310)
+                    </p>
+                    <p class="explore-section__wrapper__card__price">from ₹3,957 per adult
+
+                </div>
+                <button class="scroll-arrow-btn" aria-label="Next">
+                    <i class="fa-solid fa-arrow-right"></i>
+                </button>
+
+            </div>
+        </div>
+
+        <div class="explore-section">
+            <h1>Iconic places you need to see</h1>
+            <div class="explore-section__wrapper__container">
+
+                <!-- Card 1 -->
+                <div class="explore-section__wrapper__card">
+                    <img src="image/iconic-img1.jpg" alt="">
+                    <h3 class="explore-section__wrapper__card__h3">Rome, Italy</h3>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="explore-section__wrapper__card">
+                    <img src="image/iconic-img2.jpg" alt="">
+                    <h3 class="explore-section__wrapper__card__h3">Paris, France</h3>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="explore-section__wrapper__card">
+                    <img src="image/iconic-img3.jpg" alt="">
+                    <h3 class="explore-section__wrapper__card__h3">Las Vegas, NV</h3>
+
+                </div>
+
+                <!-- Card 4 -->
+                <div class="explore-section__wrapper__card">
+                    <img src="image/iconic-img4.jpg" alt="">
+                    <h3 class="explore-section__wrapper__card__h3">Switzerland, Country in Europe</h3>
+                </div>
+
+                <!-- Card 5 -->
+                <div class="explore-section__wrapper__card">
+                    <img src="image/iconic-img5.jpg" alt="">
+                    <h3 class="explore-section__wrapper__card__h3">Florence</h3>
+                </div>
+
+                <!-- Card 6 -->
+                <div class="explore-section__wrapper__card">
+                    <img src="image/iconic-img6.jpg" alt="">
+                    <h3 class="explore-section__wrapper__card__h3">New York City</h3>
+                </div>
+
+                <!-- Card 7 -->
+                <div class="explore-section__wrapper__card">
+                    <img src="image/iconic-img7.jpg" alt="">
+                    <h3 class="explore-section__wrapper__card__h3">Alaska, US </h3>
+                </div>
+
+                <!-- Card 8 -->
+                <div class="explore-section__wrapper__card">
+                    <img src="image/iconic-img8.jpg" alt="">
+                    <h3 class="explore-section__wrapper__card__h3">Cruise ships-The Bahamas and Liberia</h3>
+                </div>
+
+            </div>
+            <button class="scroll-arrow-btn" aria-label="Next">
+                <i class="fa-solid fa-arrow-right"></i>
+            </button>
+
+        </div>
+
+        <div class="foundation-section">
+            <!-- Image -->
+            <img src="image/ride-img.jpg" class="foundation-section__img" alt="Donation">
+
+            <!-- Content Container -->
+            <div class="foundation-section__content">
+                <div class="foundation-section__top">
+                    <img src="image/logo-img.png" class="tripadvisor-logo-image" alt="">
+                    <h5>
+                        Sponsored By
+                        <a href="https://wanderlab.travel/" class="sponsored_link">Wanderlab
+                        </a>
+                    </h5>
+                </div>
+                <h3>Watch the Wanderer</h3>
+                <p>TravelVista's Award-winning travel series, now streaming on Amazon Prime Video.</p>
+                <button class="donate-btn">Learn more</button>
+            </div>
+        </div>
+
+        <div class="award-section">
+            <!-- Left content block for Desktop -->
+            <div class="award-section__content">
+                <img src="image/tripadvisor_2026_badge.jpg" class="award-section_badge" alt="2026 Badge">
+                <h1>Travellers' Choice Awards Best of the Best</h1>
+                <p>Among our top 1% of places, stays, eats, and experiences—decided by you.</p>
+                <button class="award-section__btn">See the winners</button>
+            </div>
+
+            <!-- Right image block for Desktop -->
+            <img src="image/award-img.jpg" class="award-section__image" alt="Award Image">
+        </div>
+
+        <div class="footer-section">
+            <div>
+                <h4>About TravelVista</h4>
+                <p>About us</p>
+                <p>Press</p>
+                <p>Resources and Policies</p>
+                <p>Careers</p>
+                <p>Trust & Safety</p>
+                <p>Contact us</p>
+                <p>TravelVista</p>
+            </div>
+            <hr class="footer-divider">
+            <div>
+                <h4>Explore</h4>
+                <p>Write a review</p>
+                <p>Add a Place</p>
+                <p>Join</p>
+                <p>Travellers' Choice</p>
+                <p>Help center</p>
+                <p>Travel Stories</p>
+            </div>
+            <hr class="footer-divider">
+            <div>
+                <h4>Do Buisness With Us</h4>
+                <p>Owners & DMO/CVB</p>
+                <p>Buisness Advantage</p>
+                <p>Sponsored Placements</p>
+                <p>Adverties with us</p>
+            </div>
+            <hr class="footer-divider">
+            <div>
+                <h4>Get the App</h4>
+                <p>IPhone App</p>
+                <p>Android App</p>
+            </div>
+            <hr class="footer-divider">
+            <div>
+                <select name="INR" id="">
+                    <option value=""> INR</option>
+                </select>
+            </div>
+            <div>
+                <select name="India" id="">
+                    <option value=""> India</option>
+                </select>
+            </div>
+            <div class="footer-section__icons">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-youtube"></i>
+                <i class="fa-brands fa-tiktok"></i>
+                <i class="fa-brands fa-pinterest"></i>
+                <i class="fa-brands fa-x-twitter"></i>
+            </div>
+
+            <div class="footer-section__copyright">
+                <img src="image/logo-img.png" class="tripadvisor-logo-image" alt="">
+                <h6>&copy; 2026 TravelVista LLC All rights reserved.</h6>
+            </div>
+
+
+        </div>
+</body>
+
+</html>

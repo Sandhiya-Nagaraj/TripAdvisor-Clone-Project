@@ -1,0 +1,905 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* google font */
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* navbar */
+.navbar {
+    display: flex;
+    background-color: white;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+
+}
+
+.tripadvisor-logo {
+    width: 180px;
+}
+
+.navbar__s1 {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.navbar__s1__img {
+    width: 22px;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.navbar__s1__profile_img {
+    width: 22px;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.navbar__s1__img__bg {
+    width: 22px;
+    height: 22px;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 50%;
+    box-shadow: 0 0 15px 5px #00EB5B;
+}
+
+.play-with-ai__img {
+    width: 15%;
+}
+
+.play-with-ai__button {
+    display: flex;
+    align-items: center;
+    border: solid #00EB5B 0px;
+    border-radius: 100px;
+    padding: 5px;
+    background-color: transparent;
+
+}
+
+.play-with-ai__button_max {
+    display: none;
+    align-items: center;
+    background-color: transparent;
+    font-size: 10px;
+    font-weight: 500;
+    cursor: pointer;
+    color: #000;
+    border: solid #00EB5B 1px;
+    border-radius: 50px;
+    padding: 10px 28px;
+}
+
+.play-with-ai__button_max:hover {
+    box-shadow: 0 0 15px 5px #00EB5B;
+}
+
+.navbar__s1__signin__btn {
+    display: none;
+    background-color: #002213;
+    color: white;
+    font-size: 10px;
+    font-weight: 500;
+    padding: 10px 28px;
+    border: none;
+    border-radius: 50px;
+    /* Makes it a pill shape */
+    cursor: pointer;
+    transition: transform 0.1s ease;
+}
+
+.navbar__s1__signin__btn:hover {
+    box-shadow: 0 0 15px 5px #171717;
+}
+
+.heading_where {
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+}
+
+/* categories */
+.categories {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    /* Adds clean spacing between categories */
+    overflow-x: auto;
+    width: 100%;
+    /* Enables horizontal scrolling */
+    padding-bottom: 8px;
+    /* Space between content and scrollbar */
+    white-space: nowrap;
+    /* Prevents items from wrapping onto next line */
+}
+
+.categories__section {
+    display: flex;
+    align-items: center;
+    padding: 8px 4px;
+    cursor: pointer;
+    position: relative;
+}
+
+/* tab underline */
+.categories__section.active::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #00EB5B;
+}
+
+.categories__section__img {
+    width: 25x;
+    height: 25px;
+}
+
+.categories__title {
+    font-size: small;
+    margin: 10px;
+    padding-left: 4px;
+
+}
+
+/* Search section */
+.search-section {
+    background-color: white;
+    border: solid 1px black;
+    border-radius: 16px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    width: 100%;
+    gap: 16px;
+    padding: 10px;
+    flex-direction: column;
+    display: flex;
+    margin: 15px;
+}
+
+.search__input_wrapper {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    width: 100%;
+    padding-bottom: 12px;
+    border-bottom: 1px solid #eee;
+}
+
+.search-input {
+    border: none;
+    outline: none;
+    width: 100%;
+    font-size: 16px;
+}
+
+.search-section__s1 p {
+    padding-left: 10px;
+    margin: 5px;
+
+}
+
+.search-button {
+    background-color: #00eb5b;
+    color: #000;
+    border: none;
+    padding: 15px;
+    margin: 8px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-weight: 600;
+    width: 100%;
+}
+
+.main-card {
+    background-color: #00eb6c;
+    border-radius: 16px;
+    max-width: 600px;
+    margin: 18px auto;
+    padding: 16px;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    display: flex;
+    flex-direction: column; /* Stack vertically on mobile */
+    gap: 16px;
+
+}
+.main-card > div:first-child {
+    width: 100%;
+}
+
+.main-card__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 12px;
+    display: block;
+    
+}
+
+.main-card__bottom {
+    text-align: center;
+    padding: 30px 20px 10px;
+    color: #000000;
+    
+}
+
+.main-card__bottom h1 {
+    border-top: #000 1px solid ;
+    padding: 12px 0 0 0;
+    font-size: 1.9rem;
+    font-weight: 800;
+    line-height: 1.05;
+    /* Tighter line height like Image 2 */
+    letter-spacing: -1px;
+    margin: 0 0 16px 0;
+}
+
+.main-card__bottom p {
+    font-size: 1rem;
+    font-weight: 500;
+    margin: 0 0 24px 0;
+}
+
+.main-card__bottom__button {
+    background-color: #002213;
+    color: white;
+    font-size: 0.7rem;
+    font-weight: 600;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 50px;
+    /* Makes it a pill shape */
+    cursor: pointer;
+    transition: transform 0.1s ease;
+}
+
+.main-card__bottom_button:hover {
+    transform: scale(1.02);
+}
+
+.interesting-things {
+    margin: 5%;
+    margin-left: 20px;
+}
+
+.interesting-things h1 {
+    font-size: 22px;
+    color: #000;
+    font-weight: 600;
+    margin-bottom: 4px;
+}
+
+.interesting-things p {
+    font-size: 14px;
+    color: #545454;
+    margin-top: 0;
+    margin-bottom: 16px;
+}
+
+.interesting-things__wrapper {
+    position: relative;
+}
+
+.interesting-things__section {
+    display: flex;
+    gap: 16px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    padding-bottom: 8px;
+}
+
+/* Hide default scrollbar for a clean design */
+.interesting-things__section::-webkit-scrollbar {
+    display: none;
+}
+
+.explore-section__wrapper__container::-webkit-scrollbar {
+    display: none;
+}
+
+.interesting-things__card {
+    position: relative;
+    flex: 0 0 280px;
+    /* Fixed width so cards don't shrink down */
+    height: 70%;
+    /* Tall cards matching expected layout */
+    border-radius: 12px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.interesting-things__card__img {
+    display: block;
+    height: 70%;
+    width: 100%;
+    object-fit: cover;
+    transition: 0.3s ease;
+    border-radius: 12px;
+
+}
+
+.interesting-things__card:hover {
+    transform: scale(1.03);
+    /* Subtle zoom on hover */
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+/* Dark Gradient Overlay for legible text */
+.interesting-things__card::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 40%;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent);
+    pointer-events: none;
+}
+
+.interesting-things__card h3 {
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: 700;
+    position: absolute;
+    bottom: 16px;
+    left: 16px;
+    margin: 0;
+    z-index: 2;
+    /* Sits above the gradient overlay */
+}
+
+.scroll-arrow-btn {
+    position: absolute;
+    right: -15px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40px;
+    height: 40px;
+    background-color: #ffffff;
+    border: 1px solid black;
+    border-radius: 50%;
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    z-index: 5;
+}
+/* Position Left Button */
+.scroll-arrow-btn--left {
+    left: 10px;
+}
+/* Position Right Button */
+.scroll-arrow-btn--right {
+    right: 10px;
+}
+.explore-section {
+    margin: 15px;
+}
+
+.explore-section h1 {
+    font-size: 22px;
+    color: #000;
+    font-weight: 600;
+    margin-bottom: 4px;
+}
+
+.explore-section p {
+    font-size: 14px;
+    color: #545454;
+    margin-top: 0;
+    margin-bottom: 16px;
+}
+
+.explore-section__wrapper {
+    display: flex;
+
+}
+
+.explore-section__wrapper__container {
+    gap: 16px;
+    display: flex !important;
+    flex-direction: row !important;
+    overflow-x: auto;
+    padding-bottom: 12px;
+    width: 100%;
+}
+
+.explore-section__wrapper__card {
+    flex: 0 0 260px !important;
+    /* Fixed width so cards don't shrink down */
+    cursor: pointer;
+    width: 250px !important;
+    min-width: 260px !important;
+    position: relative;
+    box-sizing: border-box;
+    padding: 10px;
+
+}
+
+.explore-section__wrapper__card:hover {
+    transform: scale(1.03);
+    /* Subtle zoom on hover */
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+/* Dark Gradient Overlay for legible text */
+.interesting-things__card::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 40%;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent);
+    pointer-events: none;
+}
+
+.explore-section__wishlist {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    margin: 10px;
+    color: black;
+    background-color: white;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+}
+
+.explore-section__wrapper__card img {
+    object-fit: cover;
+    height: 200px;
+    width: 100%;
+    border-radius: 12px;
+    display: block;
+}
+
+.explore-section__wrapper__card__h3 {
+    font-size: 14px;
+    font-weight: 600;
+    color: black;
+    margin: 8px 0 4px 0;
+    line-height: 1.3;
+}
+
+.explore-section__wrapper__card p {
+    font-size: 12px;
+    color: #545454;
+    margin: 4px 0;
+    display: flex;
+    align-items: center;
+    gap: 2px;
+}
+
+.explore-section__wrapper__card__price {
+    color: black;
+    font-size: 13px;
+    font-weight: 700;
+    margin-top: 4px;
+}
+
+.foundation-section {
+    background-color: #F7F7F7;
+    max-width: 600px;
+    margin: 20px;
+    padding: 16px;
+    border-radius: 12px;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    display: flex;
+    flex-direction: column; /* Stacked layout on mobile */
+    gap: 16px;
+}
+
+.foundation-section__top {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 8px;
+}
+
+.tripadvisor-logo-image {
+    width: 18%;
+    height: auto;
+}
+
+.foundation-section__top h5 {
+    color: #545454;
+    font-size: 0.75rem;
+    margin: 0;
+}
+
+.foundation-section__img {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    object-fit: cover;
+    display: block;
+}
+
+.foundation-section h3 {
+    color: black;
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin: 0 0 8px 0;
+    padding: 0;
+}
+
+.foundation-section p {
+    color: #545454;
+    font-size: 0.85rem;
+    line-height: 1.4;
+    margin: 0 0 16px 0;
+    padding: 0;
+}
+
+.donate-btn {
+    background-color: #002213;
+    color: white;
+    font-size: 0.85rem;
+    font-weight: 600;
+    padding: 10px 24px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: transform 0.1s ease;
+}
+
+.donate-btn:hover {
+    transform: scale(1.02);
+}
+.sponsored_link {
+    color: #545454;
+    font-weight: 100;
+}
+.award-section {
+    background-color: #0f100c; /* Deep dark background */
+    max-width: 600px;
+    margin: 18px auto;
+    padding: 24px 16px;
+    border-radius: 16px;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.award-section__content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.award-section_badge {
+    width: 48px;
+    height: auto;
+    margin-bottom: 12px;
+}
+
+.award-section h1 {
+    color: #ffffff;
+    font-size: 1.5rem;
+    font-weight: 800;
+    line-height: 1.15;
+    margin: 0 0 10px 0;
+    padding: 0;
+}
+
+.award-section p {
+    color: #ffffff;
+    font-size: 0.85rem;
+    line-height: 1.4;
+    margin: 0 0 18px 0;
+    padding: 0;
+}
+
+.award-section__btn {
+    background-color: #f3be6d;
+    color: #000000;
+    font-size: 0.85rem;
+    font-weight: 700;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: transform 0.1s ease;
+}
+
+.award-section__btn:hover {
+    transform: scale(1.02);
+}
+
+.award-section__image {
+    width: 100%;
+    height: auto;
+    border-radius: 16px;
+    object-fit: cover;
+    display: block;
+}
+.footer-section {
+    background-color: #F7F7F7;
+    padding: 24px 20px;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-section h4 {
+    color: #000;
+    font-size: 0.90rem;
+    font-weight: 600;
+    margin: 0 0 8px 0;
+    padding: 5px 0;
+}
+
+.footer-section h4:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.footer-section p {
+    color: #333;
+    font-size: 0.75rem;
+    font-weight: 400;
+    margin: 0 0 6px 0;
+    padding: 2px 0;
+}
+
+.footer-section p:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.footer-divider {
+    border: none;
+    border-top: 1px solid #E0E0E0;
+    margin: 16px 0;
+}
+
+.footer-section select {
+    border: solid 1px #656565;
+    background-color: #fff;
+    padding: 10px 14px;
+    margin: 6px 0;
+    width: 100%;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+
+.footer-section__icons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 16px;
+    margin: 16px 0 8px 0;
+    font-size: 1.1rem;
+    color: #000;
+}
+
+.footer-section__copyright {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 8px;
+}
+
+.tripadvisor-logo-image {
+    width: 28px;
+    height: auto;
+}
+
+.footer-section__copyright h6 {
+    font-size: 0.70rem;
+    color: #545454;
+    font-weight: 400;
+    margin: 0;
+}
+@media screen and (min-width:576px) {
+    .navbar__s1__img__bg {
+        display: none;
+    }
+
+    .navbar__s1__profile_img {
+        display: none;
+    }
+
+    .play-with-ai__button_max {
+        display: flex;
+    }
+
+    .navbar__s1__signin__btn {
+        display: flex;
+
+    }
+
+    .heading_where {
+        display: flex;
+    }
+
+    .categories {
+        display: flex;
+        align-items: center;
+    }
+/* search section */
+    .search-section {
+        display: flex;
+        flex-direction: row;
+        /* Changes layout from stacked to side-by-side */
+        align-items: center;
+        /* Vertically centers icon, text, and button */
+        justify-content: space-between;
+        border-radius: 30px;
+        padding: 6px 6px 6px 16px;
+        width: 100%;
+    }
+
+    .search__input_wrapper {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        flex: 1;
+        /* Takes up all available space to push button right */
+        border-bottom: none;
+        padding-bottom: 0;
+    }
+
+    .search-button {
+        width: auto;
+        padding: 10px 24px;
+        border-radius: 20px;
+    }
+
+    /* main-card */
+    .main-card {
+        flex-direction: row;        /* Side-by-side layout */
+        align-items: center;
+        max-width: 1000px;         /* Expands card width for desktop */
+        padding: 24px;
+        gap: 0;
+    }
+
+    .main-card > div:first-child {
+        flex: 1;                    /* Takes up 50% width */
+    }
+    .main-card__bottom h1{
+        border-top: none;
+    }
+    .main-card__bottom {
+        flex: 1;                    /* Takes up 50% width */
+        border-left: 1px solid #000; /* Vertical divider line */
+        margin-left: 24px;
+        padding-left: 24px;
+        text-align: center;
+    }
+    /* foundation */
+    .foundation-section {
+        flex-direction: row;       /* Side-by-side layout */
+        align-items: center;
+        max-width: 1000px;        /* Expand layout width */
+        padding: 0;               /* Bleed-to-edge layout matching desktop reference */
+        overflow: hidden;
+    }
+
+    .foundation-section__img {
+        flex: 1;
+        width: 50%;
+        height: 100%;
+        min-height: 320px;
+        border-radius: 0;         /* Flush corners on desktop */
+    }
+
+    .foundation-section__content {
+        flex: 1;
+        width: 50%;
+        padding: 40px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;       /* Centered text and button like desktop mockup */
+        text-align: center;
+    }
+
+    .foundation-section__top {
+        justify-content: center;
+    }
+
+    .foundation-section h3 {
+        font-size: 1.75rem;
+    }
+/* award section */
+.award-section {
+        flex-direction: row;        /* Places text on left and image on right */
+        align-items: center;
+        max-width: 1000px;         /* Allows card to stretch wider on desktop */
+        padding: 0;                /* Flush edges to match desktop design */
+        overflow: hidden;
+    }
+
+    .award-section__content {
+        flex: 1;
+        width: 50%;
+        padding: 40px;
+        align-items: flex-start;   /* Left-aligns content on desktop */
+        text-align: left;
+    }
+
+    .award-section h1 {
+        font-size: 2.5rem;         /* Larger heading on desktop screens */
+        letter-spacing: -0.5px;
+    }
+
+    .award-section__image {
+        flex: 1;
+        width: 50%;
+        height: 100%;
+        min-height: 380px;
+        border-radius: 0;          /* Right side flush edges */
+    }
+/* footer section */
+.footer-section {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr); /* Creates 4 horizontal columns */
+        gap: 20px;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 40px 24px;
+    }
+
+    /* Hide divider lines on desktop view */
+    .footer-divider {
+        display: none;
+    }
+
+    /* Target the Currency Select dropdown container */
+    .footer-section > div:nth-child(9) {
+        grid-column: 3 / 4;
+        grid-row: 2;
+        justify-self: end;
+        width: 120px;
+    }
+
+    /* Target the Country Select dropdown container */
+    .footer-section > div:nth-child(10) {
+        grid-column: 4 / 5;
+        grid-row: 2;
+        justify-self: end;
+        width: 120px;
+    }
+
+    /* Position social icons on the bottom right */
+    .footer-section__icons {
+        grid-column: 3 / 5;
+        grid-row: 3;
+        justify-content: flex-end;
+        align-items: center;
+        margin: 0;
+    }
+
+    /* Position logo and copyright on the bottom left */
+    .footer-section__copyright {
+        grid-column: 1 / 3;
+        grid-row: 2 / 4;
+        align-self: end;
+    }
+
+}
+
+@media screen and (max-width:576px) {}
